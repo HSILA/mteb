@@ -74,7 +74,7 @@ class PubChemSMILESPC(AbsTaskPairClassification):
 """,
     )
 
-    def load_data(self):
+    def load_data(self, **kwargs):
         """Load dataset from HuggingFace hub"""
         if self.data_loaded:
             return
